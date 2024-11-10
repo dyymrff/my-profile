@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> My Profile</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2> Alhady Ma'ruf </h2>
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alhadyyy_/"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+         </div>
+
+         <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+            
+         </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="Asset 1.png" alt="">
+                    <h2>Alhady Maruf</h2>
+                </div>
+                <ul class="nav">
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                     <li><a href="portofolio.html">Portofolio</a></li>
+                     <li><a href="contact.html">Contact</a></li> 
+                </ul>
+                <br>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/alhadyyy_/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a> 
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="photo">
+                    <img src="Asset 1.png" alt="">
+                </div>
+                <h2> Welcome</h2>
+                <h1> im <span class="input">Alhady Maruf</span></h1>
+                <h3>UI/UX Designer.</h3>
+                    <a href="contact.html" class="btn">contact Me</a>
+            </div>
+        </div>
+    </div>
+    
+        
+    <script>
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon i");
+
+        menuicon.addEventListener("click",function(){
+            navbar.classList.toggle("open");
+            if(icon.classList.contains("fa-bars"))
+        {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+        else{
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+        }
+    
+    )
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
